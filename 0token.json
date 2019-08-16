@@ -1,0 +1,370 @@
+{
+  "type": "Program",
+  "start": 0,
+  "end": 93,
+  "loc": {
+    "start": {
+      "line": 2,
+      "column": 4
+    },
+    "end": {
+      "line": 3,
+      "column": 49
+    }
+  },
+  "range": [
+    5,
+    89
+  ],
+  "body": [
+    {
+      "type": "ImportDeclaration",
+      "start": 5,
+      "end": 39,
+      "loc": {
+        "end": {
+          "line": 2,
+          "column": 38
+        }
+      },
+      "range": [
+        5,
+        39
+      ],
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "start": 13,
+          "end": 17,
+          "loc": {
+            "start": {
+              "line": 2,
+              "column": 12
+            },
+            "end": {
+              "line": 2,
+              "column": 16
+            }
+          },
+          "range": [
+            13,
+            17
+          ],
+          "imported": {
+            "type": "Identifier",
+            "start": 13,
+            "end": 17,
+            "loc": {},
+            "range": [
+              13,
+              17
+            ],
+            "name": "Text"
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "start": 24,
+        "end": 38,
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 23
+          },
+          "end": {
+            "line": 2,
+            "column": 37
+          }
+        },
+        "range": [
+          24,
+          38
+        ],
+        "value": "react-native",
+        "raw": "'react-native'"
+      }
+    },
+    {
+      "type": "ImportDeclaration",
+      "start": 44,
+      "end": 89,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 4
+        }
+      },
+      "range": [
+        44,
+        89
+      ],
+      "specifiers": [
+        {
+          "type": "ImportSpecifier",
+          "start": 52,
+          "end": 57,
+          "loc": {
+            "start": {
+              "line": 3,
+              "column": 12
+            },
+            "end": {
+              "line": 3,
+              "column": 17
+            }
+          },
+          "range": [
+            52,
+            57
+          ],
+          "imported": {
+            "type": "Identifier",
+            "start": 52,
+            "end": 57,
+            "loc": {},
+            "range": [
+              52,
+              57
+            ],
+            "name": "Image"
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "start": 64,
+        "end": 89,
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 24
+          }
+        },
+        "range": [
+          64,
+          89
+        ],
+        "value": "react-native-normalized",
+        "raw": "'react-native-normalized'"
+      }
+    }
+  ],
+  "sourceType": "module",
+  "comments": [],
+  "tokens": [
+    {
+      "type": "Keyword",
+      "value": "import",
+      "start": 5,
+      "end": 11,
+      "loc": {
+        "end": {
+          "line": 2,
+          "column": 10
+        }
+      },
+      "range": [
+        5,
+        11
+      ]
+    },
+    {
+      "type": "Punctuator",
+      "value": "{",
+      "start": 12,
+      "end": 13,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 11
+        },
+        "end": {
+          "line": 2,
+          "column": 12
+        }
+      },
+      "range": [
+        12,
+        13
+      ]
+    },
+    {
+      "type": "Identifier",
+      "value": "Text",
+      "start": 13,
+      "end": 17,
+      "loc": {},
+      "range": [
+        13,
+        17
+      ]
+    },
+    {
+      "type": "Punctuator",
+      "value": "}",
+      "start": 17,
+      "end": 18,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 16
+        },
+        "end": {
+          "line": 2,
+          "column": 17
+        }
+      },
+      "range": [
+        17,
+        18
+      ]
+    },
+    {
+      "type": "Identifier",
+      "value": "from",
+      "start": 19,
+      "end": 23,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 18
+        },
+        "end": {
+          "line": 2,
+          "column": 22
+        }
+      },
+      "range": [
+        19,
+        23
+      ]
+    },
+    {
+      "type": "String",
+      "value": "'react-native'",
+      "start": 24,
+      "end": 38,
+      "loc": {},
+      "range": [
+        24,
+        38
+      ]
+    },
+    {
+      "type": "Punctuator",
+      "value": ";",
+      "start": 38,
+      "end": 39,
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 37
+        }
+      },
+      "range": [
+        38,
+        39
+      ]
+    },
+    {
+      "type": "Keyword",
+      "value": "import",
+      "start": 44,
+      "end": 50,
+      "loc": {
+        "end": {
+          "line": 3,
+          "column": 10
+        }
+      },
+      "range": [
+        44,
+        50
+      ]
+    },
+    {
+      "type": "Punctuator",
+      "value": "{",
+      "start": 51,
+      "end": 52,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 11
+        },
+        "end": {
+          "line": 3,
+          "column": 12
+        }
+      },
+      "range": [
+        51,
+        52
+      ]
+    },
+    {
+      "type": "Identifier",
+      "value": "Image",
+      "start": 52,
+      "end": 57,
+      "loc": {},
+      "range": [
+        52,
+        57
+      ]
+    },
+    {
+      "type": "Punctuator",
+      "value": "}",
+      "start": 57,
+      "end": 58,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 17
+        },
+        "end": {
+          "line": 3,
+          "column": 18
+        }
+      },
+      "range": [
+        57,
+        58
+      ]
+    },
+    {
+      "type": "Identifier",
+      "value": "from",
+      "start": 59,
+      "end": 63,
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 19
+        },
+        "end": {
+          "line": 3,
+          "column": 23
+        }
+      },
+      "range": [
+        59,
+        63
+      ]
+    },
+    {
+      "type": "String",
+      "value": "'react-native-normalized'",
+      "start": 64,
+      "end": 89,
+      "loc": {},
+      "range": [
+        64,
+        89
+      ]
+    }
+  ],
+  "parent": null
+}

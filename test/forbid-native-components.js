@@ -62,11 +62,37 @@ ruleTester.run('react-native-normalized/forbid-native-components', rule, {
 						'Import Text, Image and Alert from "react-native-normalized" instead for a more consistent cross-platform behavior.'
 				}
 			]
+		},
+		{
+			code: `
+				import {Text} from 'react-native';
+				import {Image} from 'react-native-normalized'
+			`,
+			errors: [
+				{
+					ruleId: 'react-native-normalized/forbid-native-components',
+					message:
+						'Import Text from "react-native-normalized" instead for a more consistent cross-platform behavior.'
+				}
+			]
 		}
 	],
 	valid: [
 		'import {Text} from "react-native-normalized"',
 		'import {View} from "react-native"',
-		'import {Image} from "got"'
+		'import {Image} from "got"',
+		'import {View, TouchableOpacity, Keyboard} from "react-native";',
+		`
+			import {Text, Image} from 'react-native-normalized';
+			import {StyleSheet} from 'react-native'
+		`,
+		`
+			import {StyleSheet} from 'react-native'
+			import {Text, Image} from 'react-native-normalized';
+		`,
+		`
+			const {StyleSheet} = require('react-native')
+			const {Text, Image} = require('react-native-normalized');
+		`
 	]
 });

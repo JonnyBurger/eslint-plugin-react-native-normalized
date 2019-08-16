@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-react-native-normalized",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint rule for forbidding use of React Native components when a version of react-native-normalized is available",
   "main": "index.js",
   "directories": {
