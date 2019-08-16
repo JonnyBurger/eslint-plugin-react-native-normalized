@@ -24,27 +24,7 @@ const and = (data, separator = 'and', oxfordComma = false) => {
 	}
 };
 
-function findTokens(node, recurse = 0) {
-	var seen = [];
-
-	const stringified = JSON.stringify(
-		node,
-		function(key, val) {
-			if (val != null && typeof val == 'object') {
-				if (seen.indexOf(val) >= 0) {
-					return;
-				}
-				seen.push(val);
-			}
-			return val;
-		},
-		2
-	);
-	fs.writeFileSync(recurse + 'token.json', stringified);
-}
-
 function reportIfMissing(context, node, disallowed, name, tokens) {
-	findTokens(node.parent);
 	if (name === 'react-native') {
 		const filtered = tokens
 			.filter(t => {
@@ -104,7 +84,7 @@ module.exports = {
 				);
 			},
 			CallExpression: function handleRequires(node) {
-				if (isStaticRequire(node)) {
+				if (isStaticRequire(node) && node.parent.id) {
 					reportIfMissing(
 						context,
 						node,

@@ -93,6 +93,12 @@ ruleTester.run('react-native-normalized/forbid-native-components', rule, {
 		`
 			const {StyleSheet} = require('react-native')
 			const {Text, Image} = require('react-native-normalized');
+		`,
+		`
+			HudManager.setHudContent({
+				icon: require('./assets/clear.png'),
+				label: strings.COULD_NOT_VOTE
+			});
 		`
 	]
 });
