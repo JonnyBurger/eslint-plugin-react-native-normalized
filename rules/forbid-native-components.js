@@ -1,4 +1,3 @@
-const fs = require('fs');
 const isStaticRequire = node => {
 	return (
 		node &&
