@@ -99,6 +99,10 @@ ruleTester.run('react-native-normalized/forbid-native-components', rule, {
 				icon: require('./assets/clear.png'),
 				label: strings.COULD_NOT_VOTE
 			});
+		`,
+		`
+			'use strict';
+			import {AsyncStorage} from 'react-native';
 		`
 	]
 });

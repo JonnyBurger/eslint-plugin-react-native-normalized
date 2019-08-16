@@ -77,8 +77,16 @@ module.exports = {
 					node,
 					disallowed,
 					node.source.value,
-					node.parent.body[0]
-						? node.parent.body[0].specifiers
+					node.parent.body.find(
+						b =>
+							b.type === 'ImportDeclaration' &&
+							b.source.value === 'react-native'
+					)
+						? node.parent.body.find(
+								b =>
+									b.type === 'ImportDeclaration' &&
+									b.source.value === 'react-native'
+						  ).specifiers
 						: node.parent.tokens
 				);
 			},
