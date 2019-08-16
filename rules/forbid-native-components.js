@@ -42,6 +42,9 @@ function reportIfMissing(context, node, disallowed, name) {
 			})
 			.map(t => {
 				return t.value;
+			})
+			.filter((value, index, self) => {
+				return self.indexOf(value) === index;
 			});
 		if (tokens.length > 0) {
 			context.report({
