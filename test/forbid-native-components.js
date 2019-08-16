@@ -103,6 +103,11 @@ ruleTester.run('react-native-normalized/forbid-native-components', rule, {
 		`
 			'use strict';
 			import {AsyncStorage} from 'react-native';
+		`,
+		`
+			import React, {Component, ReactElement} from 'react';
+			import {Text, ActivityIndicator} from 'react-native-normalized';
+			import {StyleSheet, View, Platform} from 'react-native';
 		`
 	]
 });
