@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/JonnyBurger/eslint-plugin-react-native-normalized#readme",
   "peerDependencies": {
-    "eslint": "^6.1.0"
+    "eslint": ">=6.1.0"
   },
   "devDependencies": {
     "ava": "^2.2.0",
